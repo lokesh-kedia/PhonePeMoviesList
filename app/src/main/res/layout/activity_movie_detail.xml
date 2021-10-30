@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:padding="@dimen/padding_16dp"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_phonepe"
+        app:layout_constraintBottom_toBottomOf="@id/popularity_value"
+        app:layout_constraintEnd_toStartOf="@id/release_date_tag"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/release_date_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="Release Date"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="@dimen/text_size_18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/image" />
+
+
+    <TextView
+        android:id="@+id/release_date_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="2021-03-24"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="@dimen/text_size_16sp"
+        app:layout_constraintStart_toStartOf="@id/release_date_tag"
+        app:layout_constraintTop_toBottomOf="@id/release_date_tag" />
+
+    <TextView
+        android:id="@+id/rating_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Rating"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="@dimen/text_size_18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/release_date_tag"
+        app:layout_constraintTop_toBottomOf="@id/release_date_value" />
+
+
+    <TextView
+        android:id="@+id/rating_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="8.6"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="@dimen/text_size_16sp"
+        app:layout_constraintStart_toStartOf="@id/rating_tag"
+        app:layout_constraintTop_toBottomOf="@id/rating_tag" />
+
+    <TextView
+        android:id="@+id/popularity_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Popularity"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="@dimen/text_size_18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/release_date_tag"
+        app:layout_constraintTop_toBottomOf="@id/rating_value" />
+
+
+    <TextView
+        android:id="@+id/popularity_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="23605.676"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="@dimen/text_size_16sp"
+        app:layout_constraintStart_toStartOf="@id/popularity_tag"
+        app:layout_constraintTop_toBottomOf="@id/popularity_tag" />
+
+
+    <TextView
+        android:id="@+id/overview"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="TextView"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image" />
+</androidx.constraintlayout.widget.ConstraintLayout>
